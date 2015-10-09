@@ -27,7 +27,7 @@ void setup () {
     //define variables values
       fighterY=floor(random(0,450));
       treasureX=floor(random(20,600));  treasureY=floor(random(20,450));
-      enemyX=-61;  enemyY=floor(random(50,430)); 
+      enemyX=-65;  enemyY=floor(random(50,430)); 
       bg1X=0;
       hpvolume=floor(random(50,200));
 }
@@ -49,9 +49,9 @@ void draw() {
     image(fighter,580,fighterY);
   
   //enemy location and movement
-    image(enemy,enemyX,enemyY);
+    image(enemy,enemyX-65,enemyY);
           enemyX+=3;
-          enemyX=enemyX%=640;
+          enemyX=enemyX%=705;
     
   //life bar location and volume
     fill(255,0,0);
