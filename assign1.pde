@@ -49,9 +49,9 @@ void draw() {
     image(fighter,580,fighterY);
   
   //enemy location and movement
-    image(enemy,enemyX-100,enemyY);
+    image(enemy,enemyX-65,enemyY);
           enemyX+=3;
-          enemyX%=640;
+          enemyX%=705;
     
   //life bar location and volume
     fill(255,0,0);
